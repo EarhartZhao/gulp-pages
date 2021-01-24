@@ -5,12 +5,7 @@
   "main": "lib/index.js",
   "bin": "bin/gulp-pages.js",
   "scripts": {
-    "clean": "gulp clean",
-    "lint": "gulp lint",
-    "serve": "gulp serve",
-    "build": "gulp build",
-    "start": "gulp start",
-    "deploy": "gulp deploy --production"
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -25,7 +20,7 @@
   "directories":{
     "lib":"lib"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "browser-sync": "^2.26.7",
@@ -41,6 +36,9 @@
     "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^3.1.6"
+  },
+  "devDependencies": {
+    "standard": "^13.1.0"
   },
   "homepage": "https://github.com/EarhartZhao/gulp-pages#readme"
 }
